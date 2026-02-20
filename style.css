@@ -1,0 +1,106 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin : 0 ;
+}
+img {
+    margin-bottom : 0px ;
+    width : 360px;
+    border-radius: 8px 8px 0 0;
+}
+.main {
+    margin : 30px auto ;
+    width : 360px;
+    height: 670px;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.title{
+    margin-left : 25px ;
+    margin-top: 15px;
+    color :hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+    letter-spacing: 5px;
+    font-size : 10px ;
+    text-transform: uppercase;
+}
+h1{
+    color : initial ;
+    margin-left : 25px ;
+    margin-right: 25px;
+    font-family: 'Fraunces', serif;
+    line-height: 0.9;
+}
+.par{
+    margin-left : 25px ;
+    margin-right: 40px;
+    font-weight: 500;
+    color :hsl(228, 12%, 48%) ; 
+}
+.after-price {
+    margin : 15px 25px ;
+    display : inline-block;
+    color : hsl(158, 36%, 37%);
+    font-size : 20px ;
+    font-weight : bold ;
+    margin-right : 10px;
+    font-family: 'Fraunces', serif;
+}
+.before-price {
+    display : inline-block;
+    color :hsl(228, 12%, 48%) ; 
+    font-size : 15px ;
+    text-decoration : line-through;
+    transform: translateY(-5px);
+}
+button {
+    margin : 10px 25px ;
+    background-color: hsl(158, 36%, 37%);
+    width: 290px;
+    height: 40px;
+    color: white;
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('images/icon-cart.svg'); 
+    background-repeat: no-repeat;     
+    background-position: 100px center;      
+    padding-left: 50px;      
+}
+button:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+
+@media (min-width: 1440px) {
+    .main {
+        width: 650px;
+        height: 400px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .main picture,
+    .main .content {
+        flex: 1; 
+    }
+    .main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px 0 0 8px;   
+    }
+    .main .content{
+        width: 100%; 
+        margin : 30px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
